@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "45f6ece8-2ccc-4c70-b336-c0088d42dc80",
+		"name": "Backend-Pro video",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29456525",
+		"_collection_link": "https://www.postman.com/devloka/workspace/tododb/collection/29456525-45f6ece8-2ccc-4c70-b336-c0088d42dc80?action=share&source=collection_link&creator=29456525"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullName",
+									"value": "omkara",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "om@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "om12",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/C:/Users/Admin/OneDrive/Pictures/Screenshots/G3.png"
+								},
+								{
+									"key": "coverImage",
+									"type": "file",
+									"src": "/C:/Users/Admin/OneDrive/Pictures/Screenshots/project-1.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Live BackendPro}}}/users/register",
+							"host": [
+								"{{Live BackendPro}}}"
+							],
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh-token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{Live BackendPro}}}/users/refresh-token",
+							"host": [
+								"{{Live BackendPro}}}"
+							],
+							"path": [
+								"users",
+								"refresh-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"email\":\"om@gmail.com\",\r\n\t\"password\":\"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Live BackendPro}}}/users/login",
+							"host": [
+								"{{Live BackendPro}}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Live BackendPro}}}/users/logout",
+							"host": [
+								"{{Live BackendPro}}}"
+							],
+							"path": [
+								"users",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "current-user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Live BackendPro}}/users/current-user",
+							"host": [
+								"{{Live BackendPro}}"
+							],
+							"path": [
+								"users",
+								"current-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\":\"12345678\",\r\n    \"newPassword\":\"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Live BackendPro}}}/users/change-password",
+							"host": [
+								"{{Live BackendPro}}}"
+							],
+							"path": [
+								"users",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserChannelProfile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Live BackendPro}}}/users/c/one",
+							"host": [
+								"{{Live BackendPro}}}"
+							],
+							"path": [
+								"users",
+								"c",
+								"one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "history",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Live BackendPro}}}/users/history",
+							"host": [
+								"{{Live BackendPro}}}"
+							],
+							"path": [
+								"users",
+								"history"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAccount Details",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\":\"Om Anant Khairnar\",\r\n    \"email\":\"Omkara@12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Live BackendPro}}/users/update-account",
+							"host": [
+								"{{Live BackendPro}}"
+							],
+							"path": [
+								"users",
+								"update-account"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
